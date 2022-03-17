@@ -1,0 +1,15 @@
+.fa-plus {
+  color: green;
+  margin: 0.2rem;
+}
+.fa-minus {
+  color: red;
+  margin: 0.2rem;
+}
+.fa-trash {
+  color: orange;
+  font-size: 1.5rem;
+}
+.btn {
+  background-color: orange;
+}

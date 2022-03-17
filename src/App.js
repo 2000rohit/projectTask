@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
 
-function App() {
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import HomeScreen from './Screens/HomeScreen'
+import NavBar from './Component/NavBar'
+import CartScreen from './Screens/CartScreen/CartScreen'
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route exact='true' path='/' element={<HomeScreen />} />
+          <Route exact='true' path='/cart' element={<CartScreen />} />
+        </Routes>
+      </Router>
+    </>
+  )
 }
 
-export default App;
+export default App
