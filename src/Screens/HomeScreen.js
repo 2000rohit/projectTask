@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Tshirt from '../Component/Tshirt'
 
@@ -10,10 +10,12 @@ import Error from '../Component/Error'
 const HomeScreen = () => {
   const mystate = useSelector((state) => state.getApiReducer)
   const { products, loading, error } = mystate
+
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getProduct())
   }, [dispatch])
+
   return (
     <main
       style={{ padding: '4rem', display: 'flex', justifyContent: 'center' }}

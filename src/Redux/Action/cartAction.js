@@ -1,6 +1,6 @@
 export const addToCart = (item, quantity) => (dispatch, getState) => {
   var cartItem = {
-    name: item.category,
+    name: item.title,
     _id: item.id,
     image: item.image,
     quantity: Number(quantity),

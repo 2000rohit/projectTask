@@ -9,3 +9,6 @@
 .quantity-list {
   height: 25px;
 }
+a:hover {
+  color: orange !important;
+}

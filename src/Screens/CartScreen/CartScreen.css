@@ -9,7 +9,10 @@
 .fa-trash {
   color: orange;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 .btn {
   background-color: orange;
+  cursor: pointer;
+  color: white;
 }
